@@ -1,5 +1,3 @@
-import 'dart:ffi';
-
 import 'package:flutter/material.dart';
 import 'package:weather_api_app/services/weather_api_client.dart';
 import 'package:weather_api_app/views/additional_information.dart';
