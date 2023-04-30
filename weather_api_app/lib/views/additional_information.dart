@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/painting.dart';
+
 
 TextStyle titleFont =
     const TextStyle(fontWeight: FontWeight.w600, fontSize: 18.0);
@@ -27,13 +27,10 @@ Widget additionalInformation(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text("wind", style: titleFont),
-                SizedBox(
-                  height: 18.0,
-                ),
-                Text(
-                  "Pressure",
-                  style: titleFont,
-                )
+
+                SizedBox(height: 18.0,),
+
+                Text("Pressure",style: titleFont,)
               ],
             ),
             Column(
@@ -41,13 +38,10 @@ Widget additionalInformation(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text("$wind", style: infoFont),
-                SizedBox(
-                  height: 20.0,
-                ),
-                Text(
-                  "$pressure",
-                  style: infoFont,
-                )
+
+                SizedBox(height: 20.0,),
+                
+                Text("$pressure",style: infoFont,)
               ],
             ),
             Column(
@@ -58,10 +52,7 @@ Widget additionalInformation(
                 SizedBox(
                   height: 18.0,
                 ),
-                Text(
-                  "Feels Like",
-                  style: titleFont,
-                )
+                Text( "Feels Like",style: titleFont,)
               ],
             ),
             Column(
